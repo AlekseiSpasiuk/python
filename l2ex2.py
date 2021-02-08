@@ -18,8 +18,6 @@ while(True):
         break
 print('\n\n','input List = ',iList)
 for count in range(len(iList))[1::2]:
-    print(count,count-1)
     iList[count-1],iList[count] = iList[count],iList[count-1]
-
 print('output List = ',iList)
 
