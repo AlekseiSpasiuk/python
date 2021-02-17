@@ -19,7 +19,7 @@ def list_sum(l : list, foo = lambda a, b : a + b) -> int:
     return a
 
 print(f"input {ch} to exit")
-while(True):
+while True:
     flag = False
     input_string = input('you string = ')
     if ch in input_string:
