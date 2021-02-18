@@ -9,9 +9,8 @@
 def fact(n):
     out = 1
     for x in range(1,n+1):
-        yield x
         out *= x
-    print(f'{n}! = {out}')
+        yield out
 
-for el in fact(101):
-    print(el,end=' ')
+for el in fact(5):
+    print(el)
