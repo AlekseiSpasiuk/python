@@ -21,4 +21,4 @@ def check_init(x):
 l = [randint(1, 10) for x in range(10)]
 check = check_init(l[0])
 print(f"original list -> {l}")
-print(list(filter(check,l)))
+print(f'output list -> {list(filter(check,l))}')
