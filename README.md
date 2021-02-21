@@ -1,2 +1,2 @@
 # python
-Начальный курс python d geekbrains
+Начальный курс python geekbrains
