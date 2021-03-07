@@ -1,9 +1,12 @@
-class Clothes():
+from abc import ABC, abstractmethod
+
+
+class Clothes(ABC):
 
     def __init__(self, name):
         self.name = name
 
-    @property
+    @abstractmethod
     def expenditure(self):
         pass
 
@@ -36,6 +39,4 @@ suit = Suit(190)
 
 print(coat.expenditure)
 print(suit.expenditure)
-
 print(coat + suit)
-
