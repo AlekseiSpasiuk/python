@@ -11,10 +11,13 @@ class Matrix:
         result = []
         for row in range(len(self.matrix)):
             row_result = []
-            for column in range(len(self.matrix[row])):
-                row_result.append(self.matrix[row][column]
-                                  + other.matrix[row][column])
-            result.append(row_result)
+            if len(self.matrix[row]) == len(other.matrix[row]):
+                for column in range(len(self.matrix[row])):
+                    row_result.append(self.matrix[row][column] +
+                                      other.matrix[row][column])
+                result.append(row_result)
+            else:
+                return Matrix([])
         return Matrix(result)
 
 
